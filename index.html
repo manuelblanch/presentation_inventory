@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Presentació Projecte Manuel</title>
+	<title>Presentació Manuel</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/sky.css">
+	<link rel="stylesheet" href="css/theme/moon.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -35,7 +35,7 @@
 			<h4 class="fragment" align="center">Pagines incloses</h4>
 			<h4 class="fragment" align="center">
 
-				<ol>
+<ol>
 
 					<li>Inventory</li>
 					<li>Empaquetament</li>
@@ -72,92 +72,17 @@
 <script src="js/reveal.js"></script>
 
 <script>
-
-
-	// Full list of configuration options available here:
-	// https://github.com/hakimel/reveal.js#configuration
+	// More info https://github.com/hakimel/reveal.js#configuration
 	Reveal.initialize({
-		controls: true,
-		progress: true,
 		history: true,
-		keyboard: true,
-		slideNumber: true,
-
-		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
-
-		// Optional libraries used to extend on reveal.js
+		// More info https://github.com/hakimel/reveal.js#dependencies
 		dependencies: [
-			{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
-			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
-			{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
-			{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
-			{ src: 'plugin/menu/menu.js' }
-
-		],
-
-		menu: {
-
-			// Specifies which side of the presentation the menu will
-			// be shown. Use 'left' or 'right'.
-			side: 'left',
-
-			// Add slide numbers to the titles in the slide list.
-			// Use 'true' or format string (same as reveal.js slide numbers)
-			numbers: true,
-
-			// Specifies which slide elements will be used for generating
-			// the slide titles in the menu. The default selects the first
-			// heading element found in the slide, but you can specify any
-			// valid css selector and the text from the first matching
-			// element will be used.
-			// Note: that a section data-menu-title attribute or an element
-			// with a menu-title class will take precedence over this option
-			titleSelector: 'h1, h2, h3, h4, h5, h6',
-
-			// Hide slides from the menu that do not have a title.
-			// Set to 'true' to only list slides with titles.
-			hideMissingTitles: false,
-
-			// Add markers to the slide titles to indicate the
-			// progress through the presentation
-			markers: true,
-
-			// Specifies if the transitions menu panel will be shown.
-			transitions: true,
-
-			// Specify custom panels to be included in the menu, by
-			// providing an array of objects with 'title', 'icon'
-			// properties, and either a 'src' or 'content' property.
-			custom: [
-				{ title: 'Webs principals', icon: '<i class="fa fa-bookmark">', src: 'links.html' },
-				{ title: 'Sobre mí', icon: '<i class="fa fa-info">', content: '<p>Presentació creada per Manuel Blanch</p>' }
-			],
-
-			// Specifies the themes that will be available in the themes
-			// menu panel. Set to 'false' to hide themes panel.
-			themes: false,
-
-			// Adds a menu button to the slides to open the menu panel.
-			// Set to 'false' to hide the button.
-			openButton: true,
-
-			// If 'true' allows the slide number in the presentation to
-			// open the menu panel. The reveal.js slideNumber option must
-			// be displayed for this to take effect
-			openSlideNumber: true,
-
-			// If true allows the user to open and navigate the menu using
-			// the keyboard. Standard keyboard interaction with reveal
-			// will be disabled while the menu is open.
-			keyboard: true,
-
-		},
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
 	});
-
 </script>
 </body>
 </html>
